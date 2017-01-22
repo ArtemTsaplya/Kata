@@ -73,7 +73,7 @@ public class StringCalculatorTest {
     public void bigNumbers() throws Exception {
         int expectedNumbers = 0;
         int actualResult = NumbersBiggerOneThousandIgnored.getIgnoredNumber(999);
-        Assert.assertThat(actualResult, is(expectedNumbers));
+        Assert.assertThat(expectedNumbers, is(actualResult));
     }
 }
 
