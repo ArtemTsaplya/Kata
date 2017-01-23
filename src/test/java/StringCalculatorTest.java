@@ -1,4 +1,3 @@
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -36,28 +35,28 @@ public class StringCalculatorTest {
     public void isTwoSumOfOneAndOne() throws Exception {
         int expectedSum = 2;
         int actualResult = calculator.add("1", "1");
-        Assert.assertThat(actualResult, is(expectedSum));
+        assertThat(actualResult, is(expectedSum));
     }
 
     @Test
     public void isFourSumOfTwoAndTwo() throws Exception {
         int expectedSum = 4;
         int actualResult = calculator.add("2", "2");
-        Assert.assertThat(actualResult, is(expectedSum));
+        assertThat(actualResult, is(expectedSum));
     }
 
     @Test
     public void unknownAmountNumbersSum() throws Exception {
         int expectedNumbers = 4;
         int actualResult = calculator.add("2, 2");
-        Assert.assertThat(actualResult, is(expectedNumbers));
+        assertThat(actualResult, is(expectedNumbers));
     }
 
     @Test
     public void deleteOtherCharacters() throws Exception {
         int expectedNumbers = 30;
         int actualResult = calculator.add("1,\n 22, 3,\n 4");
-        Assert.assertThat(actualResult, is(expectedNumbers));
+        assertThat(actualResult, is(expectedNumbers));
     }
 
     @Rule
@@ -73,7 +72,7 @@ public class StringCalculatorTest {
     public void bigNumbers() throws Exception {
         int expectedNumbers = 0;
         int actualResult = NumbersBiggerOneThousandIgnored.getIgnoredNumber(999);
-        Assert.assertThat(actualResult, is(expectedNumbers));
+        assertThat(actualResult, is(expectedNumbers));
     }
 }
 
