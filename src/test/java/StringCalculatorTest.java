@@ -66,6 +66,7 @@ public class StringCalculatorTest {
     public void negativeNumberException() throws Exception {
         thrown.expect(MyNegativeNumberException.class);
         thrown.expectMessage("Negatives not allowed!");
+        calculator.add("-1, -3");
     }
 
     @Test
@@ -79,5 +80,12 @@ public class StringCalculatorTest {
     public void simpleAssertTest() throws Exception {
         assert 4 == 2 + 2;
     }
+
+    @Test(expected = MyNegativeNumberException.class)
+    public void getExceptionWhenAddNegativeNumbers() throws Exception {
+        calculator.add("-1, -2");
+    }
+
+
 }
 
