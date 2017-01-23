@@ -1,4 +1,5 @@
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -86,6 +87,10 @@ public class StringCalculatorTest {
         calculator.add("-1, -2");
     }
 
-
+    @Ignore("Not implemented yet. This is my next task")
+    @Test
+    public void canHandleNoSpaceInString() throws Exception {
+        calculator.add("1,2");
+    }
 }
 
