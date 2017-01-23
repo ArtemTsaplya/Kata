@@ -17,28 +17,10 @@ public class StringCalculator {
         } catch (MyNegativeNumberException e) {
             e.printStackTrace();
         }
-//        String [] array = new String{input};
-//        StringBuilder builder = new StringBuilder();
-//        for (int i = 0; i < input.length(); i++) {
-//                for (int j = 0; j < input.length(); j++) {
-//                    String stringNumber = String.valueOf(input.charAt(j));
-//                    if (stringNumber.equals(",") | stringNumber.equals(" ")) {
-//                        break;
-//                    } else {
-//                        builder.append(stringNumber);
-//                    }
-//                    i++;
-//            }
-//
-//            result = Integer.valueOf(builder.toString()) + result;
-//
-//        }
             return result;
     }
 
     public int add(String first, String second) {
-        String df = "sdf dsfs s ssf s";
-        int sum = Integer.valueOf(first) + Integer.valueOf(second);
-        return sum;
+        return Integer.valueOf(first) + Integer.valueOf(second);
     }
 }
