@@ -74,5 +74,10 @@ public class StringCalculatorTest {
         int actualResult = NumbersBiggerOneThousandIgnored.getIgnoredNumber(1001);
         assertThat(actualResult, is(expectedNumbers));
     }
+
+    @Test
+    public void simpleAssertTest() throws Exception {
+        assert 4 == 2 + 2;
+    }
 }
 
