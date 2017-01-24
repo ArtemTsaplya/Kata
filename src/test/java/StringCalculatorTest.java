@@ -75,6 +75,7 @@ public class StringCalculatorTest {
         int expectedNumbers = 0;
         int actualResult = NumbersBiggerOneThousandIgnored.getIgnoredNumber(1001);
         assertThat(actualResult, is(expectedNumbers));
+        assert actualResult == expectedNumbers;
     }
 
     @Test
