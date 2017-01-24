@@ -88,9 +88,7 @@ public class StringCalculatorTest {
         calculator.add("-1, -2");
     }
 
-    @Ignore("Not implemented yet. This is my next task")
     @Test
-    //TODO please implement me ASAP
     public void canHandleNoSpaceInString() throws Exception {
         calculator.add("1,2");
     }

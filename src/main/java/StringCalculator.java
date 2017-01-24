@@ -6,7 +6,7 @@ public class StringCalculator {
 
     public int add(String input) throws MyNegativeNumberException {
         int result = 0;
-        input = input.replace("\n", "");
+        input = input.replace("\n", "").replace(",", ", ");
         for (String strNumber : input.split(", ")) {
             int intNumber = Integer.valueOf(strNumber);
             NumbersBiggerOneThousandIgnored.getIgnoredNumber(intNumber);
