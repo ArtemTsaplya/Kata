@@ -1,7 +1,12 @@
 package squareRoot;
 
+import org.hamcrest.core.Is;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.hamcrest.core.Is.*;
+import static org.junit.Assert.*;
 
 /**
  * Created by Artem on 26.01.2017.
@@ -13,7 +18,6 @@ public class CalculationSquareRootTest {
     @Before
     public void setUp() throws Exception {
         input = new InputNumber();
-
     }
 
     @Test
@@ -22,4 +26,10 @@ public class CalculationSquareRootTest {
         assert actualResult >= 0;
     }
 
+    @Test
+    public void roundingToNaturalNumberTest() throws Exception {
+        int expected = 9;
+        int actualResult = Calculation.rounding(9.9999);
+        assertThat(actualResult, is(expected));
+    }
 }

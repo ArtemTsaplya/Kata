@@ -14,7 +14,7 @@ public class Calculation {
         return rounding(squareRoot);
     }
 
-    private static int rounding(double result) {
+    public static int rounding(double result) {
         result = Math.floor(result);               // rounded down to the nearest integer
         return (int) result;                       // casting double to an int, and returns the result
     }

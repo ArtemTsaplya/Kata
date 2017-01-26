@@ -6,12 +6,11 @@ import java.io.InputStreamReader;
 
 public class InputNumber {
     private String notification = "Enter the number: ";
-    private BufferedReader reader;
+    private BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     public void inputNumber() {
         int number;
         int result;
-        reader = new BufferedReader(new InputStreamReader(System.in));
         try {
             System.out.print(notification);
             number = Integer.parseInt(reader.readLine());                                   // reading from the console, record a variable
