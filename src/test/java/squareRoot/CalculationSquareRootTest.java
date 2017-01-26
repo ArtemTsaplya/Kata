@@ -32,4 +32,10 @@ public class CalculationSquareRootTest {
         int actualResult = Calculation.rounding(9.9999);
         assertThat(actualResult, is(expected));
     }
+    @Test
+    public void roundingSqrtTest() throws Exception {
+        int expected = 3;
+        int actualResult = Calculation.sqrt(15);
+        assertThat(actualResult, is(expected));
+    }
 }
