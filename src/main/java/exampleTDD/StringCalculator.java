@@ -1,9 +1,9 @@
+package exampleTDD;
+
 /**
  * Created by Artem on 19.01.2017.
  */
 public class StringCalculator {
-
-
     public int add(String input) throws MyNegativeNumberException {
         int result = 0;
         input = input.replace("\n", "").replace(",", ", ");
@@ -16,6 +16,7 @@ public class StringCalculator {
             }
         }
         return result;
+
     }
 
     public int add(String first, String second) {

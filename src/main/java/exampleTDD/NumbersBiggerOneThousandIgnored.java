@@ -1,3 +1,5 @@
+package exampleTDD;
+
 /**
  * Created by Artem on 22.01.2017.
  */
