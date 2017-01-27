@@ -8,10 +8,12 @@ import java.util.Random;
 public class RandomNumberFromOneToTen {
     private static Random random = new Random();
     private static int counter;
+
     public int getRandomNumber() {
         int result;
         do {
-            result = random.nextInt(7);
+            int rangeOfNumbers = 10;
+            result = random.nextInt(rangeOfNumbers);
         }
         while (result == 0);
         return result;
@@ -19,7 +21,9 @@ public class RandomNumberFromOneToTen {
 
     public int returnOneTwoTreWithEachInvocation() {
         counter++;
-        if (counter == 4){counter = 1;}
+        if (counter == 4) {
+            counter = 1;
+        }
         return counter;
     }
 }
