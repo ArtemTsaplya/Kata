@@ -42,13 +42,9 @@ public class CalculationSquareRootTest {
 
     @Test
     public void randomNumberFromOneToTenTest() throws Exception {
+        int expected = 8;
         int actualResult = random.getRandomNumber();
-        int[] array = {1, 2, 3, 4, 5, 6};
-        for (int n : array) {
-            if (actualResult == n) {
-                break;
-            }
-        }
+        assertThat(actualResult, is(expected));
     }
 
     @Test

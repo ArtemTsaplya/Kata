@@ -6,7 +6,7 @@ import java.util.Random;
  * Created by Artem on 27.01.2017.
  */
 public class RandomNumberFromOneToTen {
-    private static Random random = new Random();
+    private static Random random = new Random(2);
     private static int counter;
 
     public int getRandomNumber() {
