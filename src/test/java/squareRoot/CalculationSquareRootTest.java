@@ -1,12 +1,10 @@
 package squareRoot;
 
-import org.hamcrest.core.Is;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 /**
  * Created by Artem on 26.01.2017.
@@ -14,10 +12,12 @@ import static org.junit.Assert.*;
 public class CalculationSquareRootTest {
 
     private InputNumber input;
+    private RandomNumberFromOneToTen random;
 
     @Before
     public void setUp() throws Exception {
         input = new InputNumber();
+        random = new RandomNumberFromOneToTen();
     }
 
     @Test
@@ -37,5 +37,16 @@ public class CalculationSquareRootTest {
         int expected = 3;
         int actualResult = Calculation.sqrt(15);
         assertThat(actualResult, is(expected));
+    }
+
+    @Test
+    public void randomNumberFromOneToTenTest() throws Exception {
+        int actualResult = random.getRandomNumber();
+        int[] array = {1, 2, 3, 4, 5, 6};
+        for (int n : array) {
+            if (actualResult == n) {
+                break;
+            }
+        }
     }
 }
