@@ -1,4 +1,4 @@
-package squareRoot;
+package randomNumber;
 
 import java.util.Random;
 
