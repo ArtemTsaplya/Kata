@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class RandomNumberFromOneToTen {
     private static Random random = new Random();
-    private static int counter = 0;
+    private static int counter;
     public int getRandomNumber() {
         int result;
         do {
