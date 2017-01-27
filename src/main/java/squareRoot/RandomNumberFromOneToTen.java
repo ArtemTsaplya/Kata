@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class RandomNumberFromOneToTen {
     private static Random random = new Random();
-
+    private static int counter = 0;
     public int getRandomNumber() {
         int result;
         do {
@@ -15,5 +15,11 @@ public class RandomNumberFromOneToTen {
         }
         while (result == 0);
         return result;
+    }
+
+    public int returnOneTwoTreWithEachInvocation() {
+        counter++;
+        if (counter == 4){counter = 1;}
+        return counter;
     }
 }

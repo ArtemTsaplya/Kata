@@ -49,4 +49,15 @@ public class CalculationSquareRootTest {
             }
         }
     }
+
+    @Test
+    public void returnOneTwoOrThreeTest() throws Exception {
+        int counter = 1;
+        for (int i = 1; i < 10; i++) {
+            int result = random.returnOneTwoTreWithEachInvocation();
+            if (counter == 4){counter = 1;}
+            assert result == counter;
+            counter++;
+        }
+    }
 }
