@@ -11,6 +11,7 @@ public class RandomNumberFromOneToTen {
 
     public int getRandomNumber() {
         int result;
+
         do {
             int rangeOfNumbers = 10;
             result = random.nextInt(rangeOfNumbers);
