@@ -5,11 +5,9 @@ package fizzBuzz;
  */
 public class PrintNumbers {
     private FizzBuzz fizzBuzz = new FizzBuzz();
-    public void print(){
+    public void startFizzBuzz(){
         for (int i = 1; i < 100; i++) {
             fizzBuzz.multiplesOfThreeFive(i);
-            fizzBuzz.multiplesOfThree(i);
-            fizzBuzz.multiplesOfFive(i);
         }
     }
 }

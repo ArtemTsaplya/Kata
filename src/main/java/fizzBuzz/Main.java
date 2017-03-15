@@ -6,6 +6,6 @@ package fizzBuzz;
 public class Main {
     public static void main(String[] args) {
         PrintNumbers printNumbers = new PrintNumbers();
-        printNumbers.print();
+        printNumbers.startFizzBuzz();
     }
 }

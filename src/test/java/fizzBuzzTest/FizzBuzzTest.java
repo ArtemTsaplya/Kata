@@ -6,6 +6,7 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
+
 /**
  * Created by Artem on 28.02.2017.
  */
@@ -14,7 +15,7 @@ public class FizzBuzzTest {
 //    public void multiplesOfThreeTest() throws Exception {
 //        FizzBuzz fizzBuzz = new FizzBuzz();
 //        String expected = "Fizz";
-//         fizzBuzz.multiplesOfThree(27);
+//         fizzBuzz.multiplesOfThreeFive(27);
 //        assertThat(actualResult, is(expected));
 //    }
 }
